@@ -36,7 +36,8 @@ ul {
 }
 
 li {
-    display: inline-block;
+    display: block;
+	margin: 0 auto;
     padding: 25px;
     border: .5px solid #00000030;
     width: 50rem;
@@ -87,4 +88,4 @@ li:hover{
 .top .promos p{
     font-size: 1.35rem;
     font-weight: bold;
-}
+}
