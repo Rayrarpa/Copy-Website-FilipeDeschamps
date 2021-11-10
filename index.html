@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recomendações</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -16,7 +16,7 @@
         </header>
 
         <section class="promo">
-            <ul>
+            <ul id="lista">
                 <li><div class="blocos">
                     <div class="top">
                         <h3>Curso de Javascript </h3>
@@ -45,6 +45,54 @@
                 </div></li>
             </ul>
         </section>
+
+        <hr/> <!-- Apartir dessa área foi um improviso, n terá mais estilização aqui, pois estava testando o JS e n o CSS, adios-->
+
+        <footer>
+            <div class="adicionar">
+                <h2>Adicionar cursos</h2>
+
+                <div class="infos">
+                    <label for="nome">Nome do curso: </label><br/>
+                    <input type="text" class="prex" id="nome"><br/>
+                    <label for="autor">Autor do curso: </label><br/>
+                    <input type="text" class="prex" id="autor"><br/>
+                    <label for="descon">Quanto de desconto(%): </label><br/>
+                    <input type="text" class="prex" id="descon"><br/>
+                    <label for="description">Descrição do curso: </label><br/>
+                    <textarea id="description" class="prex" cols="30" rows="10"></textarea>
+                </div>
+
+                <button id="btn">Adicionar promoção</button>
+            </div>
+        </footer>
     </div>
+
+    <script>
+        let lista = document.querySelector('#lista');
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click', () => {
+            const nome = document.getElementById('nome');
+            const autor = document.getElementById('autor');
+            const descon = document.getElementById('descon');
+            const description = document.getElementById('description');
+
+            let array = [nome, autor, descon, description];
+
+            lista.innerHTML += `<li><div class="blocos">
+                    <div class="top">
+                        <h3>${nome.value}</h3>
+                        <div class="promos"><p>[${descon.value}% OFF]</p></div>
+                    </div>
+                    <h4>${autor.value}</h4>
+                    <p>${description.value}</p>
+                </div></li>`;
+            
+            for (let i = 0; i < array.length; i++) {
+                array[i] = '';
+            }
+        })
+    </script>
 </body>
 </html>

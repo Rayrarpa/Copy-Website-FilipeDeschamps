@@ -88,4 +88,22 @@ li:hover{
 .top .promos p{
     font-size: 1.35rem;
     font-weight: bold;
-}
+}
+
+.adicionar .infos .prex {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+footer .adicionar h2 {
+    margin-bottom: 2rem;
+}
+
+footer .adicionar .infos input {
+    margin-top: 5px;
+}
