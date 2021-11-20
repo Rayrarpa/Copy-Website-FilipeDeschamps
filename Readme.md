@@ -1,3 +1,3 @@
 # Projeto feito no intuito de treinar meu CSS
 
-site onde eu me inspirei: https://filipedeschamps.com.br/blackfriday-2021
+<a target="_blank" href="https://filipedeschamps.com.br/blackfriday-2021">Aqui</a> está o site em que eu me inspirei
