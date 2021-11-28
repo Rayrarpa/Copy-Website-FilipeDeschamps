@@ -1,15 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-}
-
 .container {
     margin-top: 6.3rem;
     text-align: center;
@@ -88,22 +76,4 @@ li:hover{
 .top .promos p{
     font-size: 1.35rem;
     font-weight: bold;
-}
-
-.adicionar .infos .prex {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-footer {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-footer .adicionar h2 {
-    margin-bottom: 2rem;
-}
-
-footer .adicionar .infos input {
-    margin-top: 5px;
 }

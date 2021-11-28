@@ -1,0 +1,35 @@
+footer {
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.adicionar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.adicionar .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adicionar .prex {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+}
+
+#btn {
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 2px 2px 2px black;
+}
+
+#btn:hover {
+    cursor: pointer;
+}
